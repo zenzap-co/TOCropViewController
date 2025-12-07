@@ -35,7 +35,9 @@ _Looking for something more? If `TOCropViewController` doesn't meet your exact r
 * Localized in 28 languages.
 
 ## System Requirements
-iOS 11.0 or above
+iOS 12.0 or above.
+
+_Disclaimer: visionOS and Mac Catalyst modes are also enabled, however they are not officially supported. PRs are always welcome!_ 
 
 ## Installation
 
@@ -110,7 +112,7 @@ func presentCropViewController() {
   
   let cropViewController = CropViewController(image: image)
   cropViewController.delegate = self
-  present(cropViewController, animated: true, completion: nil)
+  self.present(cropViewController, animated: true, completion: nil)
 }
 
 func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {

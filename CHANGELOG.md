@@ -1,6 +1,52 @@
 x.y.z Release Notes (yyyy-MM-dd)
 =============================================================
 
+3.1.1 Release Notes (2025-11-20)
+=============================================================
+
+## Fixed
+
+- A crash occurring on (allegedly) certain older beta version of iOS 26.0. ([#635](https://github.com/TimOliver/TOCropViewController/pull/635))
+- A UI layout issue where the Done button would be obscured by the iPadOS title bar buttons when in windowed mode. ([#631](https://github.com/TimOliver/TOCropViewController/pull/631))
+- Fixed a rotation animation issue occuring on iOS 26. ([#636](https://github.com/TimOliver/TOCropViewController/pull/636))
+
+3.1.0 Release Notes (2025-10-18)
+=============================================================
+
+## Fixed
+
+- The cropping region being scaled to its minimum size when the toolbar position was set to top. ([#626](https://github.com/TimOliver/TOCropViewController/pull/626))
+- Gated out the iOS 26 code so the code is still buildable in Xcode 16.0. ([#620](https://github.com/TimOliver/TOCropViewController/pull/620))
+- The sizing code of the middle toolbar so it doesn't look overstreteched with fewer icons. ([#624](https://github.com/TimOliver/TOCropViewController/pull/624))
+
+3.0.0 Release Notes (2025-09-30)
+=============================================================
+
+## Added
+
+- A new Liquid Glass design for iOS 26. 🎉 ([#619](https://github.com/TimOliver/TOCropViewController/pull/619))
+- Configurable lists of available aspect ratios. ([#608](https://github.com/TimOliver/TOCropViewController/pull/608))
+
+## Enhancements
+
+- Updated Xcode project for Xcode 26. ([#618](https://github.com/TimOliver/TOCropViewController/pull/618))
+
+## Fixed
+
+- Deprecated `imageEdgeInsets` for iOS 15 and above. ([#618](https://github.com/TimOliver/TOCropViewController/pull/614))
+
+
+2.8.0 Release Notes (2025-09-23)
+=============================================================
+
+## Added
+
+- Deprecated iOS 11 as it no longer supported in Xcode 26.
+
+## Fixed
+
+- A bug in iOS 26 where the toolbar buttons would appear misaligned.
+
 2.7.4 Release Notes (2024-05-08)
 =============================================================
 
