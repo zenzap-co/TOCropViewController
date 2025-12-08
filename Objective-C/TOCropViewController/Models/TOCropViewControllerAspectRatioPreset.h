@@ -1,7 +1,7 @@
 //
-//  CropViewController.h
+//  TOCropViewControllerAspectRatioPreset.h
 //
-//  Copyright 2017-2025 Timothy Oliver. All rights reserved.
+//  Copyright 2015-2025 Timothy Oliver. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to
@@ -20,14 +20,21 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "TOCropToolbar.h"
-#import "TOCropView.h"
-#import "TOCropViewConstants.h"
-#import "TOCropViewController.h"
-#import "TOCropViewControllerAspectRatioPreset.h"
-#import "UIImage+CropRotate.h"
+NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT double CropViewControllerVersionNumber;
-FOUNDATION_EXPORT const unsigned char CropViewControllerVersionString[];
+@interface TOCropViewControllerAspectRatioPreset : NSObject
+
+@property (nonatomic, readonly) CGSize size;
+@property (nonatomic, readonly) NSString *title;
+
++ (NSArray<TOCropViewControllerAspectRatioPreset *> *)portraitPresets;
++ (NSArray<TOCropViewControllerAspectRatioPreset *> *)landscapePresets;
+
+- (nonnull instancetype)initWithSize:(CGSize)size title:(NSString *)title;
+
+@end
+
+NS_ASSUME_NONNULL_END
